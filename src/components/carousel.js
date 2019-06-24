@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import '../carousel.css'
  
 class MovieCarousel extends Component {
   render() {
     return (
-      <Carousel infiniteLoop='true' autoPlay='true' >
+      <Carousel className='movie-carousel' infiniteLoop='true' autoPlay='true' >
         <div>
           <img src="https://amc-theatres-res.cloudinary.com/v1553695740/amc-cdn/production/2/movies/45800/45840/PosterDynamic/75045.jpg" />
         </div>
