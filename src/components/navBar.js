@@ -140,7 +140,7 @@ export default function NavBar() {
   );
 
   return (
-    <div className={classes.grow}>
+    <nav className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
@@ -187,6 +187,6 @@ export default function NavBar() {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
-    </div>
+    </nav>
   );
 }
