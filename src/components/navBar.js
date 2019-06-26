@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../css/navBar.css';
 
 class NavBar extends Component {
   constructor(props) {
@@ -19,11 +20,11 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav>
-        <div>
+      <nav className='nav-bar'>
+        <div className='logo'>
           Movie-TV-Hub
         </div>
-        <form onSubmit={this.handleSubmit}>
+        <form className='search-form' onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.value} onChange={this.handleChange} />
           <input type="submit" value="Submit" />
         </form>
