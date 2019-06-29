@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import AccountCircle from '@material-ui/icons/AccountCircle';
 import '../css/navBar.css';
 
 class NavBar extends Component {
@@ -28,6 +29,7 @@ class NavBar extends Component {
           <input type="text" value={this.state.value} onChange={this.handleChange} />
           <input type="submit" value="Submit" />
         </form>
+          <AccountCircle />
       </nav>
     );
   }
