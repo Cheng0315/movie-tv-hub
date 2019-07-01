@@ -12,7 +12,7 @@ class Gallery extends React.Component {
  
   galleryItems() {
     return (
-      Array(7).fill().map((item, i) => <h2 className="item">{i + 1}</h2>)
+      this.props.array.fill().map((item, i) => <h2 className="item">{i + 1}</h2>)
     )
   }
  
@@ -39,7 +39,6 @@ class Gallery extends React.Component {
  
     return (
       <div>
-        <p>Popular</p>
         <AliceCarousel
           items={galleryItems}
           slideToIndex={currentIndex}
