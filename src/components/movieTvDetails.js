@@ -1,5 +1,6 @@
 import React from 'react'
- 
+import Gallery from './gallery'
+
 class MovieTvDetails extends React.Component {
   render() {
     return (
@@ -9,15 +10,23 @@ class MovieTvDetails extends React.Component {
         </div>
         <div>
           Details
+          <p>
+            Summary about the movie/tv show
+          </p>
         </div>
         <div>
           Cast
+          <Gallery array={Array(7)}/>
         </div>
         <div>
           Trailers
+          <Gallery array={Array(7)}/>
         </div>
         <div>
           Reviews
+          <p>
+            list of reviews about the movie/tv show
+          </p>
         </div>
       </div>
     )
