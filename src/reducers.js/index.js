@@ -1,4 +1,6 @@
-import {combineReducers} from 'redux';
+import {combineReducers} from 'redux'
+import movieTvReducer from './movieTvReducer'
 
 export default combineReducers ({
+  movieAndTv: movieTvReducer
 })
