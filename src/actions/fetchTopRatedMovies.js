@@ -1,0 +1,13 @@
+const fetchTopRatedMovies = () => dispatch => {
+  dispatch({type: 'START_ADDING_MOVIES'});
+  fetch('/movie/top_rated')
+    .then(response => response.json())
+    .then(moviesData => 
+      dispatch({
+        type: 'FETCH_TOP_RATED_MOVIES',
+        payload: moviesData
+    }))
+    .catch(error => console.log(error))
+}
+
+export default fetchTopRatedMovies;
