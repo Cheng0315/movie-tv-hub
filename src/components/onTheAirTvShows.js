@@ -1,7 +1,7 @@
 import React from 'react'
 import Gallery from './gallery'
  
-class LatestTvShows extends React.Component {
+class OnTheAirTvShows extends React.Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class LatestTvShows extends React.Component {
   }
 }
 
-export default LatestTvShows;
+export default OnTheAirTvShows;
