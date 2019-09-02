@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/navBar'
-import PopularTvShows from './components/popularTvShows'
-import TopRatedTvShows from './components/TopRatedTvShows'
+import MoviesContainer from './containers/moviesContainer'
+import TvContainer from './components/tvContainer'
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
+      <MoviesContainer/>
+      <TvContainer/>
     </div>
   );
 }
