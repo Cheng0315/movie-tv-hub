@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/navBar'
 import MoviesContainer from './containers/moviesContainer'
-import TvContainer from './components/tvContainer'
+import TvContainer from './containers/tvContainer'
 
 function App() {
   return (

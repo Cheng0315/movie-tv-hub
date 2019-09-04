@@ -1,7 +1,7 @@
 import React from 'react'
 import LatestTvShows from '../components/latestTvShows'
 import OnTheAirTvShows from '../components/onTheAIrTvShows'
-import PopularTvShows from '.../components/popularTvShows'
+import PopularTvShows from '../components/popularTvShows'
 import TopRatedTvShows from '../components/topRatedTvShows'
  
 class TvContainer extends React.Component {
