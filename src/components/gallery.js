@@ -16,19 +16,6 @@ class Gallery extends React.Component {
     )
   }
  
-  slidePrevPage = () => {
-    const currentIndex = this.state.currentIndex - this.state.itemsInSlide
-    this.setState({ currentIndex })
-  }
- 
-  slideNextPage = () => {
-    const { itemsInSlide, galleryItems: { length }} = this.state
-    let currentIndex = this.state.currentIndex + itemsInSlide
-    if (currentIndex > length) currentIndex = length
- 
-    this.setState({ currentIndex })
-  }
- 
   handleOnSlideChange = (event) => {
     const { itemsInSlide, item } = event
     this.setState({ itemsInSlide, currentIndex: item })
@@ -47,8 +34,6 @@ class Gallery extends React.Component {
           onSlideChanged={this.handleOnSlideChange}
           onResized={this.handleOnSlideChange}
         />
-        <button onClick={this.slidePrevPage}>Prev Page</button>
-        <button onClick={this.slideNextPage}>Next Page</button>
       </div>
     )
   }
