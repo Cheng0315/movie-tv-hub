@@ -31,8 +31,6 @@ export default function plateReducer(state = initialState, action) {
       return {...state, loadingMovies: false, onAirTvShows: action.payload}
     case 'FETCH_AIRING_TODAY_TV_SHOWS':
       return {...state, loadingMovies: false, airingTodayTvShows: action.payload}
-    case 'FETCH_TOP_RATED_TV_SHOWS':
-      return {...state, loadingMovies: false, topRatedTvShows: action.payload}
     default: 
       return state
   }
