@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import '../css/footer.css';
  
 const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <div>
+    <div id='footer'>
       Copyright &copy; {year}  Cheng Vue
     </div>
   )
