@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import '../css/carousel.css'
+import '../css/carousel.css';
  
 class MovieCarousel extends Component {
   render() {

@@ -1,5 +1,4 @@
 import React from 'react'
-import MovieCarousel from '../components/carousel'
 import PopularMovies from '../components/popularMovies'
 import UpcomingMovies from '../components/upcomingMovies'
 import TopRatedMovies from '../components/topRatedMovies'
@@ -9,7 +8,6 @@ class MoviesContainer extends React.Component {
   render() {
     return (
       <div>
-        <MovieCarousel/>
         <NowPlayingMovies/>
         <PopularMovies/>
         <UpcomingMovies/>
