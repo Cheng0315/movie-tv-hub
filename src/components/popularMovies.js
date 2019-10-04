@@ -4,7 +4,7 @@ import Gallery from './gallery'
 class PopularMovies extends React.Component {
   render() {
     return (
-      <div>
+      <div className='gallery'>
         <p>Popular</p>
         <Gallery array={Array(7)}/>
       </div>
